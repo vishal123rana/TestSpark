@@ -1,9 +1,11 @@
 
+import com.fasterxml.jackson.databind.JsonSerializer
 import org.apache.kafka.clients.consumer.ConsumerConfig
 import org.apache.kafka.common.serialization.StringDeserializer
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.kafka010.{ConsumerStrategies, KafkaUtils, LocationStrategies}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
+
 object sparkAsAConsumer {
   def main(args: Array[String]): Unit = {
     val brokers = "localhost:9092";
