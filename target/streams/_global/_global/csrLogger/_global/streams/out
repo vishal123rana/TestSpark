@@ -1,12 +1,2 @@
-[debug] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.10/scala-library-2.11.10.pom
-[debug] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.10/scala-compiler-2.11.10.pom
-[debug] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.10/scala-reflect-2.11.10.pom
-[debug] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.10/scala-reflect-2.11.10.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.10/scala-library-2.11.10.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.10/scala-compiler-2.11.10.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.10/scala-reflect-2.11.10-sources.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.10/scala-library-2.11.10-sources.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.10/scala-compiler-2.11.10-sources.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.10/scala-reflect-2.11.10-javadoc.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.10/scala-compiler-2.11.10-javadoc.jar
-[debug] downloaded https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.10/scala-library-2.11.10-javadoc.jar
+[debug] downloaded https://repo1.maven.org/maven2/io/delta/delta-core_2.11/1.0.0/delta-core_2.11-1.0.0.pom
+[debug] downloaded https://repo1.maven.org/maven2/io/delta/delta-core_2.11/1.0.0/delta-core_2.11-1.0.0.pom.sha1

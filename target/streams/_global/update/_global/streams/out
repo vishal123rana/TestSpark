@@ -1,30 +1,44 @@
 [debug] not up to date. inChanged = true, force = false
 [debug] Updating ...
-[error] lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
-[error] https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-hdfs/2.6.5/hadoop-hdfs-2.6.5.jar: wrong checksum: C:\Users\vishal rana\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-hdfs\2.6.5\hadoop-hdfs-2.6.5.jar (expected SHA-1 8bd0f95e29b9ba7960b4239a7f3706b37b183652 in C:\Users\vishal rana\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-hdfs\2.6.5\.hadoop-hdfs-2.6.5.jar__sha1, got cd89f092391a11270290bab178c47eda4551df99)
-[error] 
-[error] 	at lmcoursier.internal.shaded.coursier.Artifacts$.$anonfun$fetchArtifacts$9(Artifacts.scala:346)
-[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$extension$1(Task.scala:14)
-[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$extension$1$adapted(Task.scala:14)
-[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.wrap(Task.scala:84)
-[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$2(Task.scala:14)
-[error] 	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
-[error] 	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
-[error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[warn] 
+[warn] 	Note: Unresolved dependencies path:
+[error] sbt.librarymanagement.ResolveException: Error downloading io.delta:delta-core_2.11:1.0.0
+[error]   Not found
+[error]   Not found
+[error]   not found: C:\Users\vishal rana\.ivy2\localio.delta\delta-core_2.11\1.0.0\ivys\ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/io/delta/delta-core_2.11/1.0.0/delta-core_2.11-1.0.0.pom
+[error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:258)
+[error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$38(CoursierDependencyResolution.scala:227)
+[error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
+[error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:227)
+[error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)
+[error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:59)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:133)
+[error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:73)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:146)
+[error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:146)
+[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:127)
+[error] 	at sbt.util.Tracked$.$anonfun$inputChangedW$1(Tracked.scala:219)
+[error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:160)
+[error] 	at sbt.Classpaths$.$anonfun$updateTask0$1(Defaults.scala:3678)
+[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
+[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
+[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:68)
+[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:282)
+[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:23)
+[error] 	at sbt.Execute.work(Execute.scala:291)
+[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:282)
+[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:265)
+[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:64)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 [error] 	at java.lang.Thread.run(Thread.java:748)
-[error] Caused by: lmcoursier.internal.shaded.coursier.cache.ArtifactError$WrongChecksum: wrong checksum: C:\Users\vishal rana\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-hdfs\2.6.5\hadoop-hdfs-2.6.5.jar (expected SHA-1 8bd0f95e29b9ba7960b4239a7f3706b37b183652 in C:\Users\vishal rana\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-hdfs\2.6.5\.hadoop-hdfs-2.6.5.jar__sha1, got cd89f092391a11270290bab178c47eda4551df99)
-[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$validateChecksum$4(FileCache.scala:136)
-[error] 	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
-[error] 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
-[error] 	at scala.util.Success.map(Try.scala:213)
-[error] 	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
-[error] 	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
-[error] 	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
-[error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
-[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-[error] 	at java.lang.Thread.run(Thread.java:748)
-[error] (update) lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
-[error] https://repo1.maven.org/maven2/org/apache/hadoop/hadoop-hdfs/2.6.5/hadoop-hdfs-2.6.5.jar: wrong checksum: C:\Users\vishal rana\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-hdfs\2.6.5\hadoop-hdfs-2.6.5.jar (expected SHA-1 8bd0f95e29b9ba7960b4239a7f3706b37b183652 in C:\Users\vishal rana\AppData\Local\Coursier\Cache\v1\https\repo1.maven.org\maven2\org\apache\hadoop\hadoop-hdfs\2.6.5\.hadoop-hdfs-2.6.5.jar__sha1, got cd89f092391a11270290bab178c47eda4551df99)
+[error] (update) sbt.librarymanagement.ResolveException: Error downloading io.delta:delta-core_2.11:1.0.0
+[error]   Not found
+[error]   Not found
+[error]   not found: C:\Users\vishal rana\.ivy2\localio.delta\delta-core_2.11\1.0.0\ivys\ivy.xml
+[error]   not found: https://repo1.maven.org/maven2/io/delta/delta-core_2.11/1.0.0/delta-core_2.11-1.0.0.pom
