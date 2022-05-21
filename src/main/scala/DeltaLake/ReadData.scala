@@ -8,7 +8,8 @@ object ReadData {
   def main(args:Array[String]):Unit={
     val spark:SparkSession = SparkSession.builder().master("local[*]")
       .config("spark.sql.extensions", "io.delta.sql.DeltaSparkSessionExtension")
-      .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog").appName("App").getOrCreate()
+      .config("spark.sql.catalog.spark_catalog", "org.apache.spark.sql.delta.catalog.DeltaCatalog")
+      .appName("App").getOrCreate()
    // val df = spark.read.format("delta").load("/tmp/delta-table")
   ////  df.show()
 //    val data1 = spark.range(5, 10)
@@ -39,5 +40,6 @@ object ReadData {
       .execute()
 
     deltaTable.toDF.show()
+    Thread.sleep(10000000000L)
   }
 }
