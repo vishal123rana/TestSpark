@@ -1,20 +1,23 @@
+
+
+class Data(DEST_COUNTRY_NAME: String, ORIGIN_COUNTRY_NAME: String, count: Int)
+import org.apache.avro.mapred.AvroJob
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.types.{IntegerType, StringType, StructType}
-
-//import spark.implicits._;
 object test {
   def main(args: Array[String]): Unit = {
     println("vishal rana")
 
     val spark = SparkSession.builder().master("local[4]").appName("Application").getOrCreate()
     import spark.implicits._
-    val df = spark.read.option("inferSchema", "true").option("header", "true").csv("C:/Users/vishal rana/Desktop/SparkData/data/flight-data/csv/*.csv").as[Data]
-    df.show(false)
+//    val df = spark.read.option("inferSchema", "true").option("header", "true").csv("C:/Users/vishal rana/Desktop/SparkData/data/flight-data/csv/*.csv").as[Data]
+//    df.show(false)
 
     val schema = new StructType()
       .add("DEST_COUNTRY_NAME", StringType)
       .add("ORIGIN_COUNTRY_NAME", StringType)
       .add("count", IntegerType)
+
 
     // val bad = spark.createDataset(spark.sparkContext.emptyRDD[Data])
     //    val bad = spark.createDataset(Seq.empty[Data])
